@@ -6,6 +6,10 @@ body {
     height: 100%;
 }
 
+input {
+    color: black;
+}
+
 .header-container {
     text-align: center;
     margin: 10pt 0;
