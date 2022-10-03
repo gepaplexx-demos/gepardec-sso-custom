@@ -1,6 +1,8 @@
 body {
     background-image: url('../img/hintergrundbilder_gepardec_super_small.png');
     background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     height: 100%;
 }
 
