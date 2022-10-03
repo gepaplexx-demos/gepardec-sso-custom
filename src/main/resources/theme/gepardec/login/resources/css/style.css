@@ -65,3 +65,14 @@ body {
 #kc-social-providers h4 {
     text-align: center;
 }
+
+.kc-social-provider-logo {
+    font-size: 26px;
+    width: 30px;
+    height: 25px;
+    float: left;
+}
+
+.kc-social-gray {
+    color: var(--pf-global--Color--400);
+}
