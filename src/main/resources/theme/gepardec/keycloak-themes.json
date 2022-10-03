@@ -1,0 +1,6 @@
+{
+    "themes": [{
+        "name" : "gepardec",
+        "types": [ "login" ]
+    }]
+}
