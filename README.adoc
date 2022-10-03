@@ -1,0 +1,28 @@
+= Gepardec SSO Custom
+
+This repository represents our custom Keycloak with custom themes and provider implementations.
+
+== Developer Guide
+
+== Keycloak version
+
+The Keycloak version is defined in the file `version` which is used by the github workflows an the Containerfile.
+
+== Local development
+
+Developers need to start a Keycloak Container based on the Keycloak version the sources are meant for for developing.
+When started in development mode, the caching for resources is disabled and we can change theme related files
+which will be immediately reflected in the GUI after a refresh.
+
+.Start command for a developer Keycloak instance
+[source, bash]
+----
+docker run -p 8080:8080 \
+       -e KEYCLOAK_ADMIN=admin \
+       -e KEYCLOAK_ADMIN_PASSWORD=admin \
+       -v $(pwd)/src/main/resources/theme:/opt/keycloak/themes \
+       quay.io/keycloak/keycloak:19.0.2 \
+       start-dev
+----
+
+IMPORTANT: The used Keycloak version must be the same as defined in the file `version`

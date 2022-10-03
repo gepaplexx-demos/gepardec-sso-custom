@@ -1,6 +1,6 @@
 {
     "themes": [{
         "name" : "gepardec",
-        "types": [ "login" ]
+        "types": [ "common", "login" ]
     }]
 }
