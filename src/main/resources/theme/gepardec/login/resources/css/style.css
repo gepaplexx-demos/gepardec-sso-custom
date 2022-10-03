@@ -11,6 +11,14 @@ body {
     margin: 10pt 0;
 }
 
+#kc-header {
+    display: none;
+}
+
+#kc-page-title, #kc-social-providers > h4 {
+    color: #f0d200;
+}/* #f0d200 Gepardec yellow color */
+
 .form-container {
     height: 100%;
     width: 100%;
@@ -20,7 +28,7 @@ body {
     justify-content: center;
     align-items: center;
     color: white;
-}/* #f0d200 Gepardec yellow color */
+}
 
 .form-group {
     display: flex;
