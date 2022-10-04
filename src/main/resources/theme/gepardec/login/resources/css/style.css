@@ -1,3 +1,8 @@
+:root {
+    --gepardec-yellow: #f0d200;
+    --pf-global--Color--400: #8a8d90;
+}
+
 body {
     background-image: url('../img/hintergrundbilder_gepardec_super_small.png');
     background-size: cover;
@@ -20,8 +25,8 @@ input {
 }
 
 #kc-page-title, #kc-social-providers > h4 {
-    color: #f0d200;
-}/* #f0d200 Gepardec yellow color */
+    color: var(--gepardec-yellow);
+}
 
 #kc-login {
     border-color: var(--gepardec-yellow);
