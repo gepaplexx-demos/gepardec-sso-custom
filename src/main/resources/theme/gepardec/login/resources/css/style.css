@@ -23,6 +23,19 @@ input {
     color: #f0d200;
 }/* #f0d200 Gepardec yellow color */
 
+#kc-login {
+    border-color: var(--gepardec-yellow);
+    background-color: var(--gepardec-yellow);
+    background-image: var(--gepardec-yellow);
+    color: black;
+}
+
+#kc-login:hover {
+    border-color: var(--gepardec-yellow);
+    background-color: black;
+    color: white;
+}
+
 .form-container {
     height: 100%;
     width: 100%;
