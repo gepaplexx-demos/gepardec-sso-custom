@@ -10,3 +10,4 @@ RUN /opt/keycloak/bin/kc.sh build \
     --transaction-xa-enabled false \
     --health-enabled true \
     --metrics-enabled true
+CMD ["start", "--optimized"]
