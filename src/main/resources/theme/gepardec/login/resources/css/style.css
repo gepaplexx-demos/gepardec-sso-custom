@@ -1,13 +1,27 @@
 body {
     background-image: url('../img/hintergrundbilder_gepardec_super_small.png');
     background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     height: 100%;
+}
+
+input {
+    color: black;
 }
 
 .header-container {
     text-align: center;
     margin: 10pt 0;
 }
+
+#kc-header {
+    display: none;
+}
+
+#kc-page-title, #kc-social-providers > h4 {
+    color: #f0d200;
+}/* #f0d200 Gepardec yellow color */
 
 .form-container {
     height: 100%;
@@ -18,7 +32,7 @@ body {
     justify-content: center;
     align-items: center;
     color: white;
-}/* #f0d200 Gepardec yellow color */
+}
 
 .form-group {
     display: flex;
@@ -54,4 +68,15 @@ body {
 
 #kc-social-providers h4 {
     text-align: center;
+}
+
+.kc-social-provider-logo {
+    font-size: 26px;
+    width: 30px;
+    height: 25px;
+    float: left;
+}
+
+.kc-social-gray {
+    color: var(--pf-global--Color--400);
 }
