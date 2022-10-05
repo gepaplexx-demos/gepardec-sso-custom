@@ -9,5 +9,6 @@ RUN /opt/keycloak/bin/kc.sh build \
     --db postgres \
     --transaction-xa-enabled false \
     --health-enabled true \
-    --metrics-enabled true
+    --metrics-enabled true \
+    --features=openshift-integration
 CMD ["start", "--optimized"]
