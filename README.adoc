@@ -21,7 +21,7 @@ docker run -p 8080:8080 \
        -e KEYCLOAK_ADMIN=admin \
        -e KEYCLOAK_ADMIN_PASSWORD=admin \
        -v $(pwd)/src/main/resources/theme:/opt/keycloak/themes \
-       quay.io/keycloak/keycloak:19.0.2 \
+       quay.io/keycloak/keycloak:20.0.3 \
        start-dev
 ----
 

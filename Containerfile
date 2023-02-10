@@ -1,9 +1,9 @@
-FROM library/maven:3.8.5-openjdk-17 as provider-builder
+FROM library/maven:3.8.6-openjdk-18-slim as provider-builder
 WORKDIR /
 ADD . /
 RUN mvn clean install -Drevision=$(cat version)
 
-FROM quay.io/keycloak/keycloak:19.0.2 as builder
+FROM quay.io/keycloak/keycloak:20.0.3 as builder
 COPY --from=provider-builder /target/*.jar /opt/keycloak/providers/
 RUN /opt/keycloak/bin/kc.sh build \
     --db postgres \
